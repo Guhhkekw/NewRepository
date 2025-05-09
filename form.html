@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="estilo.css">
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 80%;
+                margin: 20px auto;
+                border-radius: 10px;
+                overflow: hidden;
+                font-size: 16px;
+            }
+            th,td{
+                border: 1px solid #ccc;
+                padding: 12px;
+                text-align: center;
+                color: #333;
+            }
+            th{
+                background-color: #f2e6d9;
+                color: #8b0000;
+            }
+            td{
+                background-color: rgba(255,255,255,0.95);
+            }            
+        </style>
+        
+    </head>
+    <body>
+    <header>
+        
+        <img src="logo.png" alt="Logomarca da Pizzaeia" class="logo">
+        <div class="texto-header">
+            <h1>Pizzaria Bella Napoli</h1>
+            <p>As melhores pizzas da cidade, direto do forno para sua mesa!</p>
+            
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="page1.html">Pagina principal</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Tela de cadastro de Clientes</h1>
+        <form action="page2.html" method="post">
+            <div class="fieldsets-container"> 
+                <fieldset> 
+                    <legend>Informações que podem ser acessadas por qualquer administrador</legend><br>
+    
+                    <label>Cliente insira seu nome</label>
+                    <input type="text" name="nome" id="name_alun" size="31" maxlength="40"><br><br>
+    
+                    <label>Data de nascimento</label>
+                    <input type="date"><br><br>
+    
+                    <label>Insira seu número:</label>
+                    <input type="tel" name="telef" id="telefone" size="16" maxlength="16"><br><br>
+    
+                    <label>ID do aluno</label>
+                    <input type="number" name="ID" id="IDalun"><br><br>
+    
+                    <label>Gênero do Cliente(a)</label><br>
+                    <label><input type="radio" name="genero" value="masc"> Masculino</label>
+                    <label><input type="radio" name="genero" value="femi"> Feminino</label>
+                    <label><input type="radio" name="genero" value="outro"> Outro</label>
+                    <label><input type="radio" name="genero" value="naodef"> Prefiro não responder</label><br><br>
+    
+                    <label>Digite o nome da rua:</label>
+                    <input type="text" name="rua" id="ruaalun" size="35" maxlength="35"><br><br>
+    
+                    <label>Digite o CEP da sua cidade:</label>
+                    <input type="tel" name="Cepcity" id="CEP" size="10" maxlength="10"><br><br>
+    
+                    <small>
+                        Caso você não saiba o CEP acesse:
+                        <a href='https://buscacepinter.correios.com.br/app/endereco/index.php' target="_blank">
+                            <button type="button">Site dos Correios</button>
+                        </a>
+                    </small>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados sensíveis</legend>
+                    <p>Esses dados são apagados dentro de 24 horas (exceto CPF)</p><br>
+    
+                    <label>Insira o CPF:</label>
+                    <input type="number" name="cpf" id="cpfaluno"><br><br>
+    
+                    <label>Cliente insira o RG:</label>
+                    <input type="text" name="rgalun" id="rgaluno"><br>
+                    <small>(Novos RGs utilizam o número do CPF)</small><br><br>
+    
+                    <label>Digite o número do cartão para pagamento de pedidos:</label>
+                    <input type="number" name="numbercard" id="numcard"><br><br>
+    
+                    <label>Digite o CVC do cartão:</label>
+                    <input type="number" name="numbercvc" id="numcvc"><br><br>
+    
+                    <label>Digite a senha do cartão:</label>
+                    <input type="number" name="numbersenha" id="numsenha"><br><br>
+                </fieldset>
+            </div>
+    
+            <div class="botoes">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
+    </body>
+</html>

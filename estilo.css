@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: 
+        linear-gradient(rgba(255,255,255,0.7)),
+        url('torre.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: rgba(139, 0, 0, 0.8);
+    padding: 20px 60px;
+    position: relative;
+    text-align: center;
+}
+.titulo {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #8b0000;
+
+
+}
+
+.titulo h2 {
+    font-family: Arial;
+    color: black;
+    font-size: 20px;
+
+
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto-header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #ffcc00;
+}
+
+.texto-header p {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+.menu {margin-top: 5px;}
+.menu li {    display: inline;}
+.menu a {    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 6px 16px;
+    border-radius: 5px;    }
+.menu a:hover {
+    background-color: #ffcc00;
+    color: #8b0000;
+}
+main {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.formulario {
+    display: flex;
+    gap: 30px; 
+    flex-wrap: wrap;
+}
+
+form fieldset {
+    border: 2px solid #8b0000;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: antiquewhite;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    width: 100%;  
+    max-width: 45%; 
+    box-sizing: border-box;
+}
+form legend {
+    font-weight: bold;
+    color: #8b0000;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: black;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.genero label {
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+.botoes input[type="submit"],
+.botoes input[type="reset"] {
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botoes input[type="submit"]:hover,
+.botoes input[type="reset"]:hover {
+    background-color: #ffcc00;
+    color: #8b0000;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    color: #333;
+}
+
+th {
+    background-color: #f2e6d9;
+    color: #8b0000;
+    font-weight: bold;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.97);
+}
+footer {
+    background-color: rgba(139, 0, 0, 0.8);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+@media (min-width: 1024px) {
+    .formulario {
+        flex-direction: row;
+    }
+    .formulario fieldset {
+        flex: 1 1 45%;
+    }
+    .formulario fieldset:last-child {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        align-items: center;
+        gap: 10px;
+    }
+
+    main {
+        margin: 20px 10px;
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto-header h1 {
+        font-size: 24px;
+    }
+
+    .texto-header p {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+.fieldsets-container {
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-bottom: 20px; 
+}
+
+.fieldsets-container fieldset {
+    flex: 1; 
+    min-width: 300px; 
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+}
+
+
+.formulario { 
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.botoes {
+    text-align: center; 
+}
